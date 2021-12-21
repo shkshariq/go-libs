@@ -1,13 +1,13 @@
 ### Response
 
-Response helper package of [core](https://gitlab.com/dishserve/go/libs/util/util) library
+Response helper package of [core](https://github.com/shkshariq/go-util/util) library
 
 #### Usage
 
 Render an error
 
 ```go
-import "gitlab.com/dishserve/go/libs/util/response"
+import "github.com/shkshariq/go-util/response"
 
 response.HandleError(ctx, err, w)
 

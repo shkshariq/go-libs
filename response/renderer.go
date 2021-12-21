@@ -3,8 +3,9 @@ package response
 import (
 	"context"
 	"encoding/json"
-	"gitlab.com/dishserve/go/libs/util/error-handler"
 	"net/http"
+
+	error_handler "github.com/shkshariq/go-util/error-handler"
 )
 
 type errorResponse struct {

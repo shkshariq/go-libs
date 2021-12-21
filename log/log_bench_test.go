@@ -3,9 +3,10 @@ package log
 import (
 	"bytes"
 	"context"
-	"github.com/google/uuid"
-	traceable_context "gitlab.com/dishserve/go/libs/util/traceable_context"
 	"testing"
+
+	"github.com/google/uuid"
+	traceable_context "github.com/shkshariq/go-util/traceable_context"
 )
 
 var byt = bytes.NewBuffer(make([]byte, 0))

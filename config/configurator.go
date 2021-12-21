@@ -1,6 +1,6 @@
 package config
 
-import "gitlab.com/dishserve/go/libs/util/log"
+import "github.com/shkshariq/go-util/log"
 
 var DefaultConfigurator Configurator
 

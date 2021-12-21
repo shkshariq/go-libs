@@ -1,9 +1,10 @@
 package config
 
 import (
-	"gitlab.com/dishserve/go/libs/util/log"
-	"gopkg.in/yaml.v2"
 	"io/ioutil"
+
+	"github.com/shkshariq/go-util/log"
+	"gopkg.in/yaml.v2"
 )
 
 type JsonFileLoader struct{}

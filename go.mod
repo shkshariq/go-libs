@@ -1,4 +1,4 @@
-module gitlab.com/dishserve/go/libs/util
+module github.com/shkshariq/go-util
 
 go 1.12
 

@@ -3,7 +3,8 @@ package logger
 import (
 	"bytes"
 	"context"
-	"gitlab.com/dishserve/go/libs/util/log"
+
+	"github.com/shkshariq/go-util/log"
 )
 
 type LogEntry struct {

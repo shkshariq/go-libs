@@ -4,11 +4,12 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	PahoMqtt "github.com/eclipse/paho.mqtt.golang"
-	"gitlab.com/dishserve/go/libs/util/error-handler"
-	"gitlab.com/dishserve/go/libs/util/log"
 	"sync"
 	"time"
+
+	PahoMqtt "github.com/eclipse/paho.mqtt.golang"
+	error_handler "github.com/shkshariq/go-util/error-handler"
+	"github.com/shkshariq/go-util/log"
 )
 
 var currentSubscription subscription

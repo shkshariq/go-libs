@@ -1,9 +1,10 @@
 package mqtt
 
 import (
-	"github.com/prometheus/client_golang/prometheus"
-	"gitlab.com/dishserve/go/libs/util/log"
 	"time"
+
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/shkshariq/go-util/log"
 )
 
 var filedKeys = []string{`topic`}

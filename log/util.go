@@ -6,8 +6,8 @@ import (
 	"log"
 	"runtime"
 
-	tContext "gitlab.com/dishserve/go/libs/util/traceable_context"
 	"github.com/google/uuid"
+	tContext "github.com/shkshariq/go-util/traceable_context"
 )
 
 type logMessage struct {

@@ -2,10 +2,11 @@ package config
 
 import (
 	"flag"
-	"gitlab.com/dishserve/go/libs/util/log"
 	"os"
 	"strconv"
 	"time"
+
+	"github.com/shkshariq/go-util/log"
 )
 
 type AppConfig struct {

@@ -1,12 +1,13 @@
 package mqtt
 
 import (
-	PahoMqtt "github.com/eclipse/paho.mqtt.golang"
-	"gitlab.com/dishserve/go/libs/util/config"
-	"gitlab.com/dishserve/go/libs/util/log"
 	"os"
 	"os/signal"
 	"time"
+
+	PahoMqtt "github.com/eclipse/paho.mqtt.golang"
+	"github.com/shkshariq/go-util/config"
+	"github.com/shkshariq/go-util/log"
 )
 
 var (
