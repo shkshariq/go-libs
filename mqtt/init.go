@@ -41,9 +41,9 @@ func Init(clientId string, onConnect PahoMqtt.OnConnectHandler) {
 		opts.AddBroker(`tcp://` + addr)
 	}
 
-	opts.ClientID = conf.ClientID
+	opts.ClientID = conf.ClientID + "-" + time.Now().GoString()
 	if clientId != `` {
-		opts.ClientID = clientId
+		opts.ClientID = clientId + "-" + time.Now().GoString()
 	}
 
 	client = PahoMqtt.NewClient(opts)
