@@ -6,6 +6,7 @@ import (
 	"time"
 
 	PahoMqtt "github.com/eclipse/paho.mqtt.golang"
+	"github.com/google/uuid"
 	"github.com/shkshariq/go-util/config"
 	"github.com/shkshariq/go-util/log"
 )
@@ -41,9 +42,9 @@ func Init(clientId string, onConnect PahoMqtt.OnConnectHandler) {
 		opts.AddBroker(`tcp://` + addr)
 	}
 
-	opts.ClientID = conf.ClientID + "-" + time.Now().GoString()
+	opts.ClientID = conf.ClientID + "-" + uuid.New().String()
 	if clientId != `` {
-		opts.ClientID = clientId + "-" + time.Now().GoString()
+		opts.ClientID = clientId + "-" + uuid.New().String()
 	}
 
 	client = PahoMqtt.NewClient(opts)
